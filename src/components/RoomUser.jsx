@@ -1,6 +1,5 @@
 function RoomUsers({users})
 {
-    console.log("RoomUsers", users);
     return (
         <>
         <div className="map-users">

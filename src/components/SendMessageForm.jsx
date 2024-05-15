@@ -18,7 +18,7 @@ const SendMessageForm = ({ sendMessage }) => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
-            <button onClick={sendMessage} disabled={!message} className="btn btn-primary">
+            <button onClick={sendMessage} disabled={!message} >
               Send
             </button>
         </div>

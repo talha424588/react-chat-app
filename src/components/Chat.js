@@ -4,6 +4,7 @@ import SendMessageForm from "./SendMessageForm";
 import RoomUsers from "./RoomUser";
 
 function Chat({ messages, sendMessage, closeConnection, users }) {
+  console.log("total users",users,users.length); 
   return (
     <>
       <div className="leave-room">
@@ -11,7 +12,7 @@ function Chat({ messages, sendMessage, closeConnection, users }) {
           Leave Room
         </Button>
       </div>
-      {/* <RoomUsers users={users} /> */}
+      <RoomUsers users={users} />
       <div className="chat">
         <MessageContainer messages={messages} />
         <SendMessageForm sendMessage={sendMessage} />

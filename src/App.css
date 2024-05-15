@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*
-{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: outfit;
   scroll-behavior: smooth;
 }
+
 Form Button {
   width: 100%;
 }
@@ -30,42 +31,44 @@ h6 {
   width: 950px;
   text-align: center;
 }
-.lobby_row
-{
+
+.lobby_row {
   justify-content: center;
   max-height: 500px;
 }
+
 /* Message Container */
-.message-container
-{
+.message-container {
   border-radius: 4px;
   border: 1px solid #c9c9c9 !important;
   outline: none;
 }
-.message
-{
-  color: #313131;
+
+.message {
+  color: #313131 !important;
 }
 
 /* Lobby */
 
-.lobby
-{
+.lobby {
   display: flex;
   flex-direction: column;
-  gap: 20px;;
-  padding: 20px;;
+  gap: 20px;
+  padding: 20px;
 }
-.lobby input
-{
-  gap: 20px;;
+
+.lobby input {
+  gap: 20px;
+  ;
 }
-.lobby button{
-  background-color: tomato !important;;
+
+.lobby button {
+  background-color: tomato !important;
   border-radius: 4px;
   border: 1px solid #c9c9c9 !important;
   outline: none;
   padding: 10px;
+  
 }
 
 .chat {
@@ -80,14 +83,14 @@ h6 {
 .user-list {
   float: left;
   background-color: #313131;
-  color:white;
+  color: white;
   width: 200px;
   height: 440px;
   margin-right: 4px;
 }
 
 .message-container {
-  height: 400px;    
+  height: 400px;
   background-color: white;
   overflow: auto;
   border-radius: 5px;
@@ -95,41 +98,42 @@ h6 {
 }
 
 .user-message {
-  text-align: right;
   padding-right: 5px;
   font-size: 18px;
+  display: flex;
+  justify-content: end;
 }
 
 .message {
-  display: inline-flex;
-  margin: 0px auto 0px auto;
-  padding: 5px;
-  font-size: 18px;
-  color:white;
-  border-radius: 20px;
-  margin-top: 3px;
+  font-size: 15px;
+  color: white;
 }
 
-.from-user {
+.sender {
   font-size: small;
-  margin-bottom: 3px;
-  margin-right: 5px;
 }
-.messageForm
-{
+
+.messageForm {
   display: flex;
   justify-content: space-between;
-  gap: 5px;;
+  gap: 5px;
+  border-radius: 4px;
+  border: 1px solid #c9c9c9 !important;
+  outline: none;
 }
-.messageForm input{
+
+.messageForm input {
   width: 100%;
-  padding: 5px;;
+  padding: 5px;
   border: none !important;
   border-radius: 5px;
 }
-.messageForm button{
+
+.messageForm button {
   width: 20%;
-  padding: 5px;;
+  padding: 5px;
   border: none !important;
   border-radius: 5px;
+  background-color: tomato;
+  color: white;
 }
