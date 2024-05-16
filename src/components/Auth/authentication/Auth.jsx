@@ -43,10 +43,24 @@ function Auth() {
       navigate("/");
     }
   }
-  function login()
-  {
-    const data = {email:email,password:password}
-    console.log("login",data);
+  async function login() {
+    const data = { email: email, password: password };
+    console.log("login", data);
+    const result = await fetch("https://localhost:7135/api/Auth/login", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    const response = await result.json();
+    if (result.status === 200) {
+      localStorage.setItem("user-info", JSON.stringify(response));
+      navigate("/");
+      setEmail("");
+      setPassword("");
+    }
   }
   const [currentState, setCurrentState] = useState("login");
   return (
